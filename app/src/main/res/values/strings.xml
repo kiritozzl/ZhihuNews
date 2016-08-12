@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ZhiHuDailyNews</string>
+    <string name="zhihu_daily_today">Zhi Hu Daily Today</string>
+    <string name="date_formate">yyyy,MMM,dd,EEE</string>
+</resources>

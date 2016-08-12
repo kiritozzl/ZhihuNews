@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      tools:context=".MainActivity">
+    <!--要显示自定义menu
+    这些都需要
+    app:showAsAction="ifRoom"
+    tools:ignore="AppCompatResource"-->
+    <item
+        android:id="@+id/calendar_menu"
+        android:title="calendar"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource"
+        android:icon="@drawable/ic_action_go_to_date"/>
+
+</menu>

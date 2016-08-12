@@ -1,0 +1,3 @@
+CHANGED,C:\Users\Administrator.PC-201509300727\Desktop\temp\ZhiHuDailyNews\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\app\coolwhether\com\zhihudailynews\entity\NewsItemListFragment$1$override.class
+CHANGED,C:\Users\Administrator.PC-201509300727\Desktop\temp\ZhiHuDailyNews\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\Administrator.PC-201509300727\Desktop\temp\ZhiHuDailyNews\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\app\coolwhether\com\zhihudailynews\entity\NewsItemListFragment$override.class

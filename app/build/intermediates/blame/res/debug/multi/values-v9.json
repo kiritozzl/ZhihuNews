@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\Administrator.PC-201509300727\\Desktop\\temp\\ZhiHuDailyNews\\app\\build\\intermediates\\res\\merged\\debug\\values-v9\\values-v9.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator.PC-201509300727\\Desktop\\temp\\ZhiHuDailyNews\\app\\build\\intermediates\\exploded-aar\\com.squareup\\android-times-square\\1.6.5\\res\\values-v9\\values-v9.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 189,
+                        "endColumn": 55,
+                        "endOffset": 240
+                    }
+                }
+            }
+        ]
+    }
+]
