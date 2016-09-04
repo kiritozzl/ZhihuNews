@@ -1,12 +1,14 @@
 package app.coolwhether.com.zhihudailynews.task;
 
 import android.os.AsyncTask;
+import android.util.Log;
 import android.webkit.WebView;
 
 import org.json.JSONException;
 
 import java.io.IOException;
 
+import app.coolwhether.com.zhihudailynews.activity.NewsDetailActivity;
 import app.coolwhether.com.zhihudailynews.entity.NewsDetail;
 import app.coolwhether.com.zhihudailynews.http.Http;
 import app.coolwhether.com.zhihudailynews.http.JsonHelper;
@@ -27,10 +29,8 @@ public class LoadNewsDetailTask extends AsyncTask<Integer, Void, NewsDetail> {
         NewsDetail mNewsDetail = null;
         try {
             mNewsDetail = JsonHelper.parseJsonToDetail(Http.getNewsContent(params[0]));
-//            Log.e(TAG, "doInBackground: mNewsDetail---"+mNewsDetail);
-//            Log.e(TAG, "doInBackground: image_resource---"+mNewsDetail.getImage_source());
         } catch (IOException | JSONException e) {
-
+                e.printStackTrace();
         } finally {
             return mNewsDetail;
         }
@@ -39,6 +39,7 @@ public class LoadNewsDetailTask extends AsyncTask<Integer, Void, NewsDetail> {
     @Override
     protected void onPostExecute(NewsDetail mNewsDetail) {
         String headerImage;
+        Log.e(TAG, "onPostExecute: share_url---"+mNewsDetail.getShare_url() );
         if (mNewsDetail.getImage() == null || mNewsDetail.getImage() == "") {
             headerImage = "file:///android_asset/news_detail_header_image.jpg";
 
@@ -58,5 +59,6 @@ public class LoadNewsDetailTask extends AsyncTask<Integer, Void, NewsDetail> {
                 + "<link rel=\"stylesheet\" type=\"text/css\" href=\"news_header_style.css\"/>"
                 + mNewsDetail.getBody().replace("<div class=\"img-place-holder\">", sb.toString());
         mWebView.loadDataWithBaseURL("file:///android_asset/", mNewsContent, "text/html", "UTF-8", null);
+        NewsDetailActivity.getShareUrl(mNewsDetail.getShare_url());
     }
 }

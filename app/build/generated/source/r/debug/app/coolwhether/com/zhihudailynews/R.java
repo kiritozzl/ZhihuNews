@@ -2438,7 +2438,8 @@ containing a value of this type.
         public static final int design_snackbar_background=0x7f02004f;
         public static final int ic_action_go_to_date=0x7f020050;
         public static final int no_image=0x7f020051;
-        public static final int notification_template_icon_bg=0x7f020052;
+        public static final int notification_template_icon_bg=0x7f020053;
+        public static final int share=0x7f020052;
     }
     public static final class id {
         public static final int action0=0x7f0c007a;
@@ -2545,6 +2546,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f0c0064;
         public static final int search_voice_btn=0x7f0c0068;
         public static final int select_dialog_listview=0x7f0c0069;
+        public static final int setting=0x7f0c0088;
         public static final int shortcut=0x7f0c0054;
         public static final int showCustom=0x7f0c0012;
         public static final int showHome=0x7f0c0013;
@@ -2645,6 +2647,7 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int menu_main=0x7f0d0000;
+        public static final int menu_news=0x7f0d0001;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

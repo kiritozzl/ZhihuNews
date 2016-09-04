@@ -608,7 +608,8 @@ int drawable design_fab_background 0x7f02004e
 int drawable design_snackbar_background 0x7f02004f
 int drawable ic_action_go_to_date 0x7f020050
 int drawable no_image 0x7f020051
-int drawable notification_template_icon_bg 0x7f020052
+int drawable notification_template_icon_bg 0x7f020053
+int drawable share 0x7f020052
 int id action0 0x7f0c007a
 int id action_bar 0x7f0c005b
 int id action_bar_activity_content 0x7f0c0000
@@ -713,6 +714,7 @@ int id search_plate 0x7f0c0063
 int id search_src_text 0x7f0c0064
 int id search_voice_btn 0x7f0c0068
 int id select_dialog_listview 0x7f0c0069
+int id setting 0x7f0c0088
 int id shortcut 0x7f0c0054
 int id showCustom 0x7f0c0012
 int id showHome 0x7f0c0013
@@ -807,6 +809,7 @@ int layout select_dialog_singlechoice_material 0x7f040034
 int layout support_simple_spinner_dropdown_item 0x7f040035
 int layout week 0x7f040036
 int menu menu_main 0x7f0d0000
+int menu menu_news 0x7f0d0001
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000
 int string abc_action_bar_home_description_format 0x7f060001

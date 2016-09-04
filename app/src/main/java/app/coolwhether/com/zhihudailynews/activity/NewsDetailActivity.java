@@ -4,10 +4,17 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.webkit.WebView;
 
 import app.coolwhether.com.zhihudailynews.R;
 import app.coolwhether.com.zhihudailynews.entity.News;
+import app.coolwhether.com.zhihudailynews.entity.NewsDetail;
+import app.coolwhether.com.zhihudailynews.http.Http;
+import app.coolwhether.com.zhihudailynews.http.JsonHelper;
 import app.coolwhether.com.zhihudailynews.support.Utility;
 import app.coolwhether.com.zhihudailynews.task.LoadNewsDetailTask;
 
@@ -15,9 +22,11 @@ import app.coolwhether.com.zhihudailynews.task.LoadNewsDetailTask;
 /**
  * Created by mac on 15-2-17.
  */
-public class NewsDetailActivity extends Activity {
+public class NewsDetailActivity extends AppCompatActivity {
     private WebView mWebView;
     private News news;
+    private static String share_url;
+    private static final String TAG = "NewsDetailActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +58,28 @@ public class NewsDetailActivity extends Activity {
         }
     }
 
+    public static void getShareUrl(String url){
+        share_url = url;
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_news,menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.setting){
+            Intent share = new Intent(android.content.Intent.ACTION_SEND);
+            share.setType("text/plain");
+            share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+
+            share.putExtra(Intent.EXTRA_SUBJECT, "Title Of The Post");
+            share.putExtra(Intent.EXTRA_TEXT, share_url);
+
+            startActivity(Intent.createChooser(share, "Share link!"));
+        }
+        return true;
+    }
 }
