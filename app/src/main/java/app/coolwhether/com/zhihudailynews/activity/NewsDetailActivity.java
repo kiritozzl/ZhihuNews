@@ -9,8 +9,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import app.coolwhether.com.zhihudailynews.R;
+import app.coolwhether.com.zhihudailynews.db.DbFavNews;
 import app.coolwhether.com.zhihudailynews.entity.News;
 import app.coolwhether.com.zhihudailynews.entity.NewsDetail;
 import app.coolwhether.com.zhihudailynews.http.Http;
@@ -26,6 +28,7 @@ public class NewsDetailActivity extends AppCompatActivity {
     private WebView mWebView;
     private News news;
     private static String share_url;
+    private boolean isFavorite = false;
     private static final String TAG = "NewsDetailActivity";
 
     @Override
@@ -79,6 +82,16 @@ public class NewsDetailActivity extends AppCompatActivity {
             share.putExtra(Intent.EXTRA_TEXT, share_url);
 
             startActivity(Intent.createChooser(share, "Share link!"));
+        }else if (item.getItemId() == R.id.favourite_menu_news){
+            DbFavNews dbFavNews = DbFavNews.getInstance(NewsDetailActivity.this);
+            isFavorite = dbFavNews.isFavorite(news);
+            if (isFavorite){
+                dbFavNews.deleteFavorite(news);
+                Toast.makeText(NewsDetailActivity.this,"该日报消息已从收藏夹中移除",Toast.LENGTH_LONG).show();
+            }else {
+                dbFavNews.saveFavorite(news);
+                Toast.makeText(NewsDetailActivity.this,"该日报消息收藏",Toast.LENGTH_LONG).show();
+            }
         }
         return true;
     }

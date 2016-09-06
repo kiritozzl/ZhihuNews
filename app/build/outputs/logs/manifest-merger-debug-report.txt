@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:3:11-55
 		INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:
 		INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:5:5-23:19
 MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.3.0] C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
@@ -77,18 +77,22 @@ activity#app.coolwhether.com.zhihudailynews.activity.SingleNewsLists
 ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:21:9-61
 	android:name
 		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:21:19-59
+activity#app.coolwhether.com.zhihudailynews.activity.FavoriteActivity
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:22:9-62
+	android:name
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:22:19-60
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:24:5-67
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:24:22-64
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:25:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:25:5-81
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:26:5-81
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:25:22-78
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:26:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:26:5-79
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:27:5-79
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:26:22-76
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:27:22-76
 uses-sdk
 INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78

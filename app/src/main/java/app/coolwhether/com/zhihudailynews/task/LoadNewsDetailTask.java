@@ -42,7 +42,6 @@ public class LoadNewsDetailTask extends AsyncTask<Integer, Void, NewsDetail> {
         Log.e(TAG, "onPostExecute: share_url---"+mNewsDetail.getShare_url() );
         if (mNewsDetail.getImage() == null || mNewsDetail.getImage() == "") {
             headerImage = "file:///android_asset/news_detail_header_image.jpg";
-
         } else {
             headerImage = mNewsDetail.getImage();
         }

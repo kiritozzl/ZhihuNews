@@ -18,6 +18,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import app.coolwhether.com.zhihudailynews.activity.CalendarActivity;
+import app.coolwhether.com.zhihudailynews.activity.FavoriteActivity;
 import app.coolwhether.com.zhihudailynews.entity.NewsItemListFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -66,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.calendar_menu){
             Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
+            startActivity(intent);
+        }else if (item.getItemId() == R.id.favourite_menu){
+            Intent intent = new Intent(this, FavoriteActivity.class);
             startActivity(intent);
         }
         return true;

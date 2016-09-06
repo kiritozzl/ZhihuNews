@@ -34,7 +34,7 @@ public class JsonHelper {
         return newsList;
     }
 
-    public static NewsDetail parseJsonToDetail(String json) throws JSONException {
+    public static NewsDetail  parseJsonToDetail(String json) throws JSONException {
         Gson gson = new Gson();
         return gson.fromJson(json, NewsDetail.class);
     }

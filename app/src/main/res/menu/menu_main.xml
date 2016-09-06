@@ -14,4 +14,10 @@
         tools:ignore="AppCompatResource"
         android:icon="@drawable/ic_action_go_to_date"/>
 
+    <item
+        android:id="@+id/favourite_menu"
+        android:title="favourite"
+        android:icon="@drawable/favorite"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource"/>
 </menu>

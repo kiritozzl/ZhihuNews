@@ -19,6 +19,7 @@
         <activity android:name=".activity.NewsDetailActivity"/>
         <activity android:name=".activity.CalendarActivity"/>
         <activity android:name=".activity.SingleNewsLists"/>
+        <activity android:name=".activity.FavoriteActivity"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

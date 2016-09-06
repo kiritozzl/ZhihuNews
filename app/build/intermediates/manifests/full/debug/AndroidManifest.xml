@@ -28,6 +28,7 @@
         <activity android:name="app.coolwhether.com.zhihudailynews.activity.NewsDetailActivity" />
         <activity android:name="app.coolwhether.com.zhihudailynews.activity.CalendarActivity" />
         <activity android:name="app.coolwhether.com.zhihudailynews.activity.SingleNewsLists" />
+        <activity android:name="app.coolwhether.com.zhihudailynews.activity.FavoriteActivity" />
     </application>
 
 </manifest>
