@@ -4,33 +4,33 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="1537860333757"
+    timestamp="7059322011951"
     token="-4455703961783869886"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="R_CLASS_CHANGE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1119" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="304" />
     <task
         name="verifier"
-        duration="0" />
+        duration="28" />
 
     <artifact
         location="C:\Users\kirito\Desktop\ZhihuNews\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="10514903310959"
-        verifier="COMPATIBLE" >
+        timestamp="7059322011951"
+        verifier="R_CLASS_CHANGE" >
         <artifact
-            location="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\builds\debug\10514903310959\classes.dex"
-            type="RELOAD_DEX" />
+            location="C:\Users\kirito\Desktop\ZhihuNews\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
     </build>
 
 </instant-run>

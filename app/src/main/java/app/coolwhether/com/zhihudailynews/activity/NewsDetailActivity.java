@@ -17,6 +17,11 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import com.tencent.connect.share.QQShare;
+import com.tencent.tauth.IUiListener;
+import com.tencent.tauth.Tencent;
+import com.tencent.tauth.UiError;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,6 +46,9 @@ public class NewsDetailActivity extends AppCompatActivity {
     private static String titles;
     private boolean isFavorite = false;
 
+    private static Tencent mTencent;
+    private static final String mAppid = "1105642919";
+
     private static final String TAG = "NewsDetailActivity";
 
     @Override
@@ -53,6 +61,53 @@ public class NewsDetailActivity extends AppCompatActivity {
 
         news = (News) getIntent().getSerializableExtra("news");
         new LoadNewsDetailTask(mWebView).execute(news.getId());
+
+        if (mTencent == null){
+            mTencent = Tencent.createInstance(mAppid,getApplicationContext());
+        }
+    }
+
+    //创建qq分享链接
+    public void shareToQq(){
+        final Bundle  params = new Bundle();
+        params.putString(QQShare.SHARE_TO_QQ_TARGET_URL,share_url);
+        params.putString(QQShare.SHARE_TO_QQ_APP_NAME,"zhi hu daily news");
+        params.putString(QQShare.SHARE_TO_QQ_TITLE,titles);
+        params.putString(QQShare.SHARE_TO_QQ_IMAGE_URL,images);
+        doShareToqq(params);
+    }
+
+    private void doShareToqq(final Bundle bundle){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mTencent != null){
+                    mTencent.shareToQQ(NewsDetailActivity.this,bundle,qqListener);
+                }
+            }
+        });
+    }
+
+    IUiListener qqListener = new IUiListener() {
+        @Override
+        public void onComplete(Object o) {
+
+        }
+
+        @Override
+        public void onError(UiError uiError) {
+            Toast.makeText(NewsDetailActivity.this,"share error" + uiError.errorMessage,Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onCancel() {
+
+        }
+    };
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Tencent.onActivityResultData(requestCode,resultCode,data,qqListener);
     }
 
     private void setWebView(WebView mWebView) {
@@ -114,8 +169,9 @@ public class NewsDetailActivity extends AppCompatActivity {
             share.putExtra(Intent.EXTRA_TEXT, share_url);
 
             startActivity(Intent.createChooser(share, "Share link!"));*/
-            initShareIntent("zhihu");
+
             //share(titles,Uri.parse(images));
+            shareToQq();
         }else if (item.getItemId() == R.id.favourite_menu_news){
             DbFavNews dbFavNews = DbFavNews.getInstance(NewsDetailActivity.this);
             isFavorite = dbFavNews.isFavorite(news);
@@ -126,6 +182,8 @@ public class NewsDetailActivity extends AppCompatActivity {
                 dbFavNews.saveFavorite(news);
                 Toast.makeText(NewsDetailActivity.this,"该日报已消息收藏",Toast.LENGTH_LONG).show();
             }
+        }else if (item.getItemId() == R.id.share_to_dudu){
+            initShareIntent("zhihu");
         }
         return true;
     }

@@ -16,8 +16,17 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="79fb0ddf86bce835eff6fa73b21c9f2f12cdeb5e">
+        sha1="608dbfad1e6d4517573e1170254314c179a17516">
         <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\instant-run_c08114e18ae7524c7e0881f9a4eebcab555dc8db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\libs\open_sdk_r5756.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7f7bf100e53d9099032f113728725e1843e1fbe2">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\open_sdk_r5756_554276747fb75f61c6fef487f6864735ec8a3585.jar" />
     </item>
     <item
         is-multidex="false"
@@ -70,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="9449f0b233abcdea1d1ac50d4a906668dcae2f48">
+        sha1="1da960f876ed45871d6a58113613de5a13682bde">
         <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_fa3c6ca5226748d6cf5f1ea4137113894f48720d.jar" />
     </item>
     <item
@@ -99,6 +108,15 @@
         revision="24.0.0"
         sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
         <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_be96cb229440a8efc49fdf4fe4b472f0f597d2ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\libs\mta-sdk-1.6.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\mta-sdk-1.6.2_1d7c3cd7b1c3c8135305d1238279ea1dba4d88b0.jar" />
     </item>
     <item
         is-multidex="false"
