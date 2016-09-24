@@ -39,7 +39,7 @@ public class LoadNewsDetailTask extends AsyncTask<Integer, Void, NewsDetail> {
     @Override
     protected void onPostExecute(NewsDetail mNewsDetail) {
         String headerImage;
-        Log.e(TAG, "onPostExecute: share_url---"+mNewsDetail.getShare_url() );
+        //Log.e(TAG, "onPostExecute: share_url---"+mNewsDetail.getShare_url() );
         if (mNewsDetail.getImage() == null || mNewsDetail.getImage() == "") {
             headerImage = "file:///android_asset/news_detail_header_image.jpg";
         } else {
@@ -58,6 +58,6 @@ public class LoadNewsDetailTask extends AsyncTask<Integer, Void, NewsDetail> {
                 + "<link rel=\"stylesheet\" type=\"text/css\" href=\"news_header_style.css\"/>"
                 + mNewsDetail.getBody().replace("<div class=\"img-place-holder\">", sb.toString());
         mWebView.loadDataWithBaseURL("file:///android_asset/", mNewsContent, "text/html", "UTF-8", null);
-        NewsDetailActivity.getShareUrl(mNewsDetail.getShare_url());
+        NewsDetailActivity.getShareData(mNewsDetail.getShare_url(),mNewsDetail.getImage(),mNewsDetail.getTitle());
     }
 }

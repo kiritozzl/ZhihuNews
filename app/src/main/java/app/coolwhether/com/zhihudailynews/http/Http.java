@@ -35,7 +35,7 @@ public class Http {
                     response.append(inputLine);
                 }
                 in.close();
-                Log.e(TAG, "get: response---"+response.toString() );
+                //Log.e(TAG, "get: response---"+response.toString() );
                 return response.toString();
             } else {
                 throw new IOException("Network Error - response code: " + con.getResponseCode());
@@ -52,7 +52,7 @@ public class Http {
     }
 
     public static String getNewsDetail(long id) throws IOException {
-        Log.e(TAG, "getNewsDetail: id---"+id );
+        //Log.e(TAG, "getNewsDetail: id---"+id );
         return get(news_datail + id);}
 
     public static String getNewsContent(int id) throws  IOException{

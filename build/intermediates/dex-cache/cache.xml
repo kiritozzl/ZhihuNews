@@ -1,3 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.squareup\android-times-square\1.6.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="248fed0fd4ef1442847a45fc57b1b9b2be0d0550">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\com.squareup-android-times-square-1.6.5_8d667af6c883e100db644a118ed3966f420b05d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="79fb0ddf86bce835eff6fa73b21c9f2f12cdeb5e">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\instant-run_c08114e18ae7524c7e0881f9a4eebcab555dc8db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.astuetz\pagerslidingtabstrip\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\com.astuetz-pagerslidingtabstrip-1.0.1_545313b4e685b870e9465811386a445c8bdba6a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.1_7ef1e4d05c411091d5525dd351ecf32283fb6726.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_fdc236763ea8a325f32c7ff262b50d635493b8f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.1_6779cfdec04a01cee74b1517cbe703d85163ef66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_6ee19d3e0b6d2aafc071737960b4bafc84fb8e98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="9449f0b233abcdea1d1ac50d4a906668dcae2f48">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_fa3c6ca5226748d6cf5f1ea4137113894f48720d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_1114b4394e5b7170af185797dc422ab97d9ae6c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\androidSDK\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_dafc88405de5382d426fec555b3919bbeaa8471e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_be96cb229440a8efc49fdf4fe4b472f0f597d2ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\gson-2.3.1_be732c6e909dfc1314359384e5af98742a38ad52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_0d3e82f8f9018fb0846870acbd290cc9ab3a1761.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\kirito\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.3\a85588bec3e2c4584d593d3f15df1677321bca72\universal-image-loader-1.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3_446787888fce176a690f72be5a4936bf73f801ab.jar" />
+    </item>
+
+</items>

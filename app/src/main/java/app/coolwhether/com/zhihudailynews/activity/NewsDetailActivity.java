@@ -1,8 +1,14 @@
 package app.coolwhether.com.zhihudailynews.activity;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.LabeledIntent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -10,6 +16,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import app.coolwhether.com.zhihudailynews.R;
 import app.coolwhether.com.zhihudailynews.db.DbFavNews;
@@ -28,7 +37,10 @@ public class NewsDetailActivity extends AppCompatActivity {
     private WebView mWebView;
     private News news;
     private static String share_url;
+    private static String images;
+    private static String titles;
     private boolean isFavorite = false;
+
     private static final String TAG = "NewsDetailActivity";
 
     @Override
@@ -61,8 +73,28 @@ public class NewsDetailActivity extends AppCompatActivity {
         }
     }
 
-    public static void getShareUrl(String url){
+    public static void getShareData(String url,String image,String title){
         share_url = url;
+        images = image;
+        titles = title;
+    }
+
+    private void share(String content, Uri uri){
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        if(uri!=null){
+            //uri 是图片的地址
+            shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
+            shareIntent.setType("image/*");
+            //当用户选择短信时使用sms_body取得文字
+            shareIntent.putExtra("sms_body", content);
+        }else{
+            shareIntent.setType("text/plain");
+        }
+        shareIntent.putExtra(Intent.EXTRA_TEXT, content);
+        //自定义选择框的标题
+        startActivity(Intent.createChooser(shareIntent, "share link!"));
+        //系统默认标题
+        //startActivity(shareIntent);
     }
 
     @Override
@@ -74,14 +106,16 @@ public class NewsDetailActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.setting){
-            Intent share = new Intent(android.content.Intent.ACTION_SEND);
+            /*Intent share = new Intent(android.content.Intent.ACTION_SEND);
             share.setType("text/plain");
             share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
 
             share.putExtra(Intent.EXTRA_SUBJECT, "Title Of The Post");
             share.putExtra(Intent.EXTRA_TEXT, share_url);
 
-            startActivity(Intent.createChooser(share, "Share link!"));
+            startActivity(Intent.createChooser(share, "Share link!"));*/
+            initShareIntent("zhihu");
+            //share(titles,Uri.parse(images));
         }else if (item.getItemId() == R.id.favourite_menu_news){
             DbFavNews dbFavNews = DbFavNews.getInstance(NewsDetailActivity.this);
             isFavorite = dbFavNews.isFavorite(news);
@@ -90,9 +124,37 @@ public class NewsDetailActivity extends AppCompatActivity {
                 Toast.makeText(NewsDetailActivity.this,"该日报消息已从收藏夹中移除",Toast.LENGTH_LONG).show();
             }else {
                 dbFavNews.saveFavorite(news);
-                Toast.makeText(NewsDetailActivity.this,"该日报消息收藏",Toast.LENGTH_LONG).show();
+                Toast.makeText(NewsDetailActivity.this,"该日报已消息收藏",Toast.LENGTH_LONG).show();
             }
         }
         return true;
+    }
+
+    //定向使用某个应用分享
+    private void initShareIntent(String type) {
+        boolean found = false;
+        Intent share = new Intent(android.content.Intent.ACTION_SEND);
+        share.setType("text/plain");
+
+        // gets the list of intents that can be loaded.
+        List<ResolveInfo> resInfo = getPackageManager().queryIntentActivities(share, 0);
+        if (!resInfo.isEmpty()){
+            for (ResolveInfo info : resInfo) {
+                //Log.e(TAG, "initShareIntent: package name---"+ info.activityInfo.packageName);
+                if (info.activityInfo.packageName.toLowerCase().contains(type) ||
+                        info.activityInfo.name.toLowerCase().contains(type) ) {
+                    share.putExtra(Intent.EXTRA_SUBJECT,  "subject");
+                    share.putExtra(Intent.EXTRA_TEXT,     share_url);
+                    //share.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(myPath)) ); // Optional, just if you wanna share an image.
+                    share.setPackage(info.activityInfo.packageName);
+                    found = true;
+                    break;
+                }
+            }
+            if (!found)
+                return;
+
+            startActivity(Intent.createChooser(share, "Select"));
+        }
     }
 }

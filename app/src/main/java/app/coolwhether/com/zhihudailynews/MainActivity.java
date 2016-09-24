@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             c.add(Calendar.DAY_OF_YEAR, -position);
             String time = sdf.format(c.getTime());
             long t = Long.parseLong(time);
-            Log.e(TAG, "getItem: t---"+t );
+            //Log.e(TAG, "getItem: t---"+t );
 
             return NewsItemListFragment.newInstance(t,position == 0);
         }

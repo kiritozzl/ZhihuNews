@@ -1,2 +1,0 @@
-CHANGED,C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,C:\Users\kirito\Desktop\ZhihuNews\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\app\coolwhether\com\zhihudailynews\db\DbHelper$override.class
