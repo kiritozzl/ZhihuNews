@@ -6,6 +6,13 @@
 ![Image text](https://github.com/kiritozzl/ZhihuNews/blob/master/images/Screenshot_2016-07-29-13-30-36_app.coolwhether.co.png)
 ![Image text](https://github.com/kiritozzl/ZhihuNews/blob/master/images/Screenshot_2016-07-29-13-30-50_app.coolwhether.co.png)
 ![Image text](https://github.com/kiritozzl/ZhihuNews/blob/master/images/Screenshot_2016-07-30-08-42-21_app.coolwhether.co.png)
+![Image text](https://github.com/kiritozzl/ZhihuNews/blob/master/images/device-2016-09-24-162440.png)
+
+
+![Image text](https://github.com/kiritozzl/ZhihuNews/blob/master/images/device-2016-09-24-162532.png)
+
+
+![Image text](https://github.com/kiritozzl/ZhihuNews/blob/master/images/device-2016-09-24-162546.png)
 
 
 非常感谢：
