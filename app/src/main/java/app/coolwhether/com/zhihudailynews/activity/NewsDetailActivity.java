@@ -183,7 +183,7 @@ public class NewsDetailActivity extends AppCompatActivity {
                 Toast.makeText(NewsDetailActivity.this,"该日报已消息收藏",Toast.LENGTH_LONG).show();
             }
         }else if (item.getItemId() == R.id.share_to_dudu){
-            initShareIntent("zhihu");
+            initShareIntent("com.zhihu.circlely");
         }
         return true;
     }
