@@ -33,8 +33,6 @@ public class NewsAdapter extends ArrayAdapter<News> {
             .considerExifParams(true)
             .build();
 
-
-
     public NewsAdapter(Context context, int resource) {
         super(context, resource);
         this.mInflater = LayoutInflater.from(context);
@@ -43,12 +41,12 @@ public class NewsAdapter extends ArrayAdapter<News> {
     }
 
     public NewsAdapter(Context context, int resource, List<News> objects) {
+
         super(context, resource, objects);
         mInflater = LayoutInflater.from(context);
         this.resource = resource;
         imageLoader.init(ImageLoaderConfiguration.createDefault(context));
     }
-
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -82,7 +80,6 @@ public class NewsAdapter extends ArrayAdapter<News> {
         addAll(newsList);
         notifyDataSetChanged();
     }
-
 
 }
 

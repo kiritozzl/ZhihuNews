@@ -128,6 +128,10 @@
         "source": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
+        "merged": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\trash.png",
+        "source": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\src\\main\\res\\drawable\\trash.png"
+    },
+    {
         "merged": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\calendar_bg_selector.xml",
         "source": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\build\\intermediates\\exploded-aar\\com.squareup\\android-times-square\\1.6.5\\res\\drawable\\calendar_bg_selector.xml"
     },

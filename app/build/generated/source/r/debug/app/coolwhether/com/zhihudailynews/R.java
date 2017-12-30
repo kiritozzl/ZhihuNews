@@ -2439,9 +2439,10 @@ containing a value of this type.
         public static final int favorite=0x7f020050;
         public static final int ic_action_go_to_date=0x7f020051;
         public static final int no_image=0x7f020052;
-        public static final int notification_template_icon_bg=0x7f020055;
+        public static final int notification_template_icon_bg=0x7f020056;
         public static final int share=0x7f020053;
         public static final int sharedudu=0x7f020054;
+        public static final int trash=0x7f020055;
     }
     public static final class id {
         public static final int action0=0x7f0c007a;
@@ -2466,7 +2467,7 @@ containing a value of this type.
         public static final int bottom=0x7f0c001e;
         public static final int buttonPanel=0x7f0c0045;
         public static final int calendar_grid=0x7f0c0078;
-        public static final int calendar_menu=0x7f0c0087;
+        public static final int calendar_menu=0x7f0c0088;
         public static final int calendar_view=0x7f0c006c;
         public static final int cancel_action=0x7f0c007b;
         public static final int center=0x7f0c001f;
@@ -2496,8 +2497,8 @@ containing a value of this type.
         public static final int exitUntilCollapsed=0x7f0c0018;
         public static final int expand_activities_button=0x7f0c003f;
         public static final int expanded_menu=0x7f0c0052;
-        public static final int favourite_menu=0x7f0c0088;
-        public static final int favourite_menu_news=0x7f0c008a;
+        public static final int favourite_menu=0x7f0c0089;
+        public static final int favourite_menu_news=0x7f0c008b;
         public static final int fill=0x7f0c002f;
         public static final int fill_horizontal=0x7f0c0030;
         public static final int fill_vertical=0x7f0c0023;
@@ -2550,7 +2551,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f0c0064;
         public static final int search_voice_btn=0x7f0c0068;
         public static final int select_dialog_listview=0x7f0c0069;
-        public static final int setting=0x7f0c0089;
+        public static final int setting=0x7f0c008a;
         public static final int shortcut=0x7f0c0054;
         public static final int showCustom=0x7f0c0012;
         public static final int showHome=0x7f0c0013;
@@ -2576,6 +2577,7 @@ containing a value of this type.
         public static final int title_template=0x7f0c0049;
         public static final int top=0x7f0c0027;
         public static final int topPanel=0x7f0c0048;
+        public static final int trash=0x7f0c0087;
         public static final int up=0x7f0c000a;
         public static final int useLogo=0x7f0c0015;
         public static final int view_offset_helper=0x7f0c000b;
@@ -2650,8 +2652,9 @@ containing a value of this type.
         public static final int week=0x7f040036;
     }
     public static final class menu {
-        public static final int menu_main=0x7f0d0000;
-        public static final int menu_news=0x7f0d0001;
+        public static final int menu_favorite=0x7f0d0000;
+        public static final int menu_main=0x7f0d0001;
+        public static final int menu_news=0x7f0d0002;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -2684,7 +2687,8 @@ containing a value of this type.
         public static final int invalid_date=0x7f060014;
         public static final int month_name_format=0x7f060015;
         public static final int status_bar_notification_info_overflow=0x7f060013;
-        public static final int zhihu_daily_today=0x7f06001b;
+        public static final int trash=0x7f06001b;
+        public static final int zhihu_daily_today=0x7f06001c;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f090087;

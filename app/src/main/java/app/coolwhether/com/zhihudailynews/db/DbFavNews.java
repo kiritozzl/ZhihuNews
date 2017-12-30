@@ -44,14 +44,14 @@ public class DbFavNews  {
     public List<News> loadFavorite(){
         List<News> favoriteList = new ArrayList<>();
         Cursor cursor = db.query(DbHelper.TABLE_NAME,null,null,null,null,null,null);
-        if (cursor.moveToFirst()){
+        if (cursor.moveToLast()){//从最后往前加载，最新收藏的消息才排在最前面
             do {
                 News news = new News();
                 news.setId(cursor.getInt(1));
                 news.setImage(cursor.getString(2));
                 news.setTitle(cursor.getString(3));
                 favoriteList.add(news);
-            }while (cursor.moveToNext());
+            }while (cursor.moveToPrevious());
         }
         cursor.close();
         return favoriteList;
@@ -72,5 +72,17 @@ public class DbFavNews  {
         if (news != null){
             db.delete(DbHelper.TABLE_NAME,DbHelper.COLUMN_NEWS_ID + "= ?",new String[]{news.getId() + ""});
         }
+    }
+
+    public boolean isEmpty(){
+        int amount = 0;
+        Cursor cursor = db.rawQuery("select * from daily_news_favorite", null);
+        amount = cursor.getCount();
+        cursor.close();
+        return amount==0?false:true;
+    }
+
+    public void clearAll(){//清空数据库里的内容
+        db.execSQL("DELETE FROM daily_news_favorite");
     }
 }
