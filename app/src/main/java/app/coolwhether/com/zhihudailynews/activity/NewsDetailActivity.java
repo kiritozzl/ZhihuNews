@@ -1,5 +1,6 @@
 package app.coolwhether.com.zhihudailynews.activity;
 
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
@@ -34,6 +35,7 @@ import app.coolwhether.com.zhihudailynews.entity.News;
 import app.coolwhether.com.zhihudailynews.entity.NewsDetail;
 import app.coolwhether.com.zhihudailynews.http.Http;
 import app.coolwhether.com.zhihudailynews.http.JsonHelper;
+import app.coolwhether.com.zhihudailynews.support.EnhanceWebView;
 import app.coolwhether.com.zhihudailynews.support.ScrollWebView;
 import app.coolwhether.com.zhihudailynews.support.Utility;
 import app.coolwhether.com.zhihudailynews.task.LoadNewsDetailTask;
@@ -43,7 +45,7 @@ import app.coolwhether.com.zhihudailynews.task.LoadNewsDetailTask;
  * Created by mac on 15-2-17.
  */
 public class NewsDetailActivity extends AppCompatActivity {
-    private ScrollWebView mWebView;
+    private EnhanceWebView mWebView;
     private News news;
     private static String share_url;
     private static String images;
@@ -61,13 +63,26 @@ public class NewsDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.news_detail);
 
-        mWebView = (ScrollWebView) findViewById(R.id.webview);
+        mWebView = (EnhanceWebView) findViewById(R.id.webview);
         setWebView(mWebView);
 
         news = (News) getIntent().getSerializableExtra("news");
         new LoadNewsDetailTask(mWebView).execute(news.getId());
 
-        mWebView.setListener(new ScrollWebView.OnScrollListener() {
+        mWebView.setScrollChangeCallback(new EnhanceWebView.onScrollChangeCallback() {
+            @Override
+            public void onScroll(int dx, int dy) {
+                //Log.e(TAG, "onScroll: ---dy:"+dy );
+                if (dy >= 1){//页面往下走隐藏actionbar
+                    getSupportActionBar().hide();
+                }else if (dy <= -1){//页面往上走，显示actionbar
+                    getSupportActionBar().show();
+                }
+
+            }
+        });
+
+ /*       mWebView.setListener(new ScrollWebView.OnScrollListener() {
             @Override
             public void onScrollUp() {
                 getSupportActionBar().show();
@@ -77,12 +92,13 @@ public class NewsDetailActivity extends AppCompatActivity {
             public void onScrollDown() {
                 getSupportActionBar().hide();
             }
-        });
+        });*/
 
         if (mTencent == null){
             mTencent = Tencent.createInstance(mAppid,getApplicationContext());
         }
     }
+
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
