@@ -45,12 +45,12 @@ public class NewsItemListFragment extends Fragment implements SwipeRefreshLayout
      * 获取NewsItemListFragment实例
      * @param id
      * @param isToday
-     * @return
+     * @RETURN
      */
     public static NewsItemListFragment newInstance(long id,boolean isToday){
         NewsItemListFragment fragment = new NewsItemListFragment();
         Bundle bundle = new Bundle();
-        bundle.putLong("id",id);
+        bundle.putLong("id",id+1);
         bundle.putBoolean("isToday",isToday);
         fragment.setArguments(bundle);
 

@@ -2497,7 +2497,7 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f0c003f;
         public static final int expanded_menu=0x7f0c0052;
         public static final int favourite_menu=0x7f0c0088;
-        public static final int favourite_menu_news=0x7f0c008b;
+        public static final int favourite_menu_news=0x7f0c008a;
         public static final int fill=0x7f0c002f;
         public static final int fill_horizontal=0x7f0c0030;
         public static final int fill_vertical=0x7f0c0023;
@@ -2550,8 +2550,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f0c0064;
         public static final int search_voice_btn=0x7f0c0068;
         public static final int select_dialog_listview=0x7f0c0069;
-        public static final int setting=0x7f0c008a;
-        public static final int share_to_dudu=0x7f0c0089;
+        public static final int setting=0x7f0c0089;
         public static final int shortcut=0x7f0c0054;
         public static final int showCustom=0x7f0c0012;
         public static final int showHome=0x7f0c0013;

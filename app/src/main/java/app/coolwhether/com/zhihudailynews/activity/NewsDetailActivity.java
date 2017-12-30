@@ -8,12 +8,15 @@ import android.content.pm.LabeledIntent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
 import android.widget.Toast;
 
@@ -31,6 +34,7 @@ import app.coolwhether.com.zhihudailynews.entity.News;
 import app.coolwhether.com.zhihudailynews.entity.NewsDetail;
 import app.coolwhether.com.zhihudailynews.http.Http;
 import app.coolwhether.com.zhihudailynews.http.JsonHelper;
+import app.coolwhether.com.zhihudailynews.support.ScrollWebView;
 import app.coolwhether.com.zhihudailynews.support.Utility;
 import app.coolwhether.com.zhihudailynews.task.LoadNewsDetailTask;
 
@@ -39,7 +43,7 @@ import app.coolwhether.com.zhihudailynews.task.LoadNewsDetailTask;
  * Created by mac on 15-2-17.
  */
 public class NewsDetailActivity extends AppCompatActivity {
-    private WebView mWebView;
+    private ScrollWebView mWebView;
     private News news;
     private static String share_url;
     private static String images;
@@ -49,6 +53,7 @@ public class NewsDetailActivity extends AppCompatActivity {
     private static Tencent mTencent;
     private static final String mAppid = "1105642919";
 
+    private float webHeight;
     private static final String TAG = "NewsDetailActivity";
 
     @Override
@@ -56,14 +61,42 @@ public class NewsDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.news_detail);
 
-        mWebView = (WebView) findViewById(R.id.webview);
+        mWebView = (ScrollWebView) findViewById(R.id.webview);
         setWebView(mWebView);
 
         news = (News) getIntent().getSerializableExtra("news");
         new LoadNewsDetailTask(mWebView).execute(news.getId());
 
+        mWebView.setListener(new ScrollWebView.OnScrollListener() {
+            @Override
+            public void onScrollUp() {
+                getSupportActionBar().show();
+            }
+
+            @Override
+            public void onScrollDown() {
+                getSupportActionBar().hide();
+            }
+        });
+
         if (mTencent == null){
             mTencent = Tencent.createInstance(mAppid,getApplicationContext());
+        }
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+
+        if (hasFocus && Build.VERSION.SDK_INT >= 19) {
+            View decorView = getWindow().getDecorView();
+            decorView.setSystemUiVisibility(
+                    //View.SYSTEM_UI_FLAG_LAYOUT_STABLE //隐藏actionBar
+                            View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);//使得即使后面触动屏幕状态栏也不会弹出，保持隐藏
         }
     }
 
@@ -182,9 +215,9 @@ public class NewsDetailActivity extends AppCompatActivity {
                 dbFavNews.saveFavorite(news);
                 Toast.makeText(NewsDetailActivity.this,"该日报已消息收藏",Toast.LENGTH_LONG).show();
             }
-        }else if (item.getItemId() == R.id.share_to_dudu){
+        }/*else if (item.getItemId() == R.id.share_to_dudu){//分享到读读日报
             initShareIntent("com.zhihu.circlely");
-        }
+        }*/
         return true;
     }
 
