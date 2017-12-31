@@ -35,6 +35,7 @@ public class SingleNewsLists extends AppCompatActivity implements SwipeRefreshLa
 
         setContentView(R.layout.list_fragment_layout);
         time = getIntent().getStringExtra("time");
+        if (time != null)
         setTitle(time);
 
         isConnected = Utility.checkNetworkConnection(this);
@@ -46,7 +47,6 @@ public class SingleNewsLists extends AppCompatActivity implements SwipeRefreshLa
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
         id = getIntent().getLongExtra("id",0);
-
 
         adapter = new NewsAdapter(this, R.layout.listview_item);
         lv.setAdapter(adapter);

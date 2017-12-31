@@ -20,4 +20,11 @@
         android:icon="@drawable/favorite"
         app:showAsAction="ifRoom"
         tools:ignore="AppCompatResource"/>
+
+    <item
+        android:id="@+id/search_menu"
+        android:title="search"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource"/>
 </menu>

@@ -29,6 +29,7 @@
         <activity android:name="app.coolwhether.com.zhihudailynews.activity.CalendarActivity" />
         <activity android:name="app.coolwhether.com.zhihudailynews.activity.SingleNewsLists" />
         <activity android:name="app.coolwhether.com.zhihudailynews.activity.FavoriteActivity" />
+        <activity android:name="app.coolwhether.com.zhihudailynews.activity.SearchClass" />
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"

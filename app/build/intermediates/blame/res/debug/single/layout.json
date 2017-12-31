@@ -212,6 +212,10 @@
         "source": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
+        "merged": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\build\\intermediates\\res\\merged\\debug\\layout\\search_layout.xml",
+        "source": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\src\\main\\res\\layout\\search_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
         "source": "C:\\Users\\kirito\\Desktop\\ZhihuNews\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_media.xml"
     },

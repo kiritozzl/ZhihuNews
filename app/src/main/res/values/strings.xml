@@ -3,4 +3,5 @@
     <string name="zhihu_daily_today">Zhi Hu Daily Today</string>
     <string name="date_formate">yyyy,MMM,dd,EEE</string>
     <string name="trash">清空收藏列表</string>
+    <string name="search_hint">输入日报日期，如：20170101</string>
 </resources>

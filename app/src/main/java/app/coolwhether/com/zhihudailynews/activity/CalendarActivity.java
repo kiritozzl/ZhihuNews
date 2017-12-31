@@ -43,9 +43,7 @@ public class CalendarActivity extends AppCompatActivity {
                 Calendar calendar = Calendar.getInstance();
                 calendar.setTime(date);
                 calendar.add(Calendar.DAY_OF_YEAR, 1);
-                //SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
                 String time = Constants.Dates.simpleDateFormat.format(calendar.getTime());
-                Log.e(TAG, "onDateSelected: time1---"+time );
 
                 //t为所选取的日期，当天知乎日报新闻的id
                 long t = Long.parseLong(time);
@@ -56,7 +54,6 @@ public class CalendarActivity extends AppCompatActivity {
                 c.setTime(date);
                 SimpleDateFormat sdf1 = new SimpleDateFormat(getString(R.string.date_formate));
                 String times = sdf1.format(c.getTime());
-                Log.e(TAG, "onDateSelected: ---times"+times );
                 intent.putExtra("time",times);
                 startActivity(intent);
             }

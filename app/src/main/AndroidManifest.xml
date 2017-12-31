@@ -20,6 +20,7 @@
         <activity android:name=".activity.CalendarActivity"/>
         <activity android:name=".activity.SingleNewsLists"/>
         <activity android:name=".activity.FavoriteActivity"/>
+        <activity android:name=".activity.SearchClass"/>
 
         <activity
             android:name="com.tencent.tauth.AuthActivity"

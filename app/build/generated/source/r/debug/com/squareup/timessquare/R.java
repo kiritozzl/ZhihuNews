@@ -54,7 +54,7 @@ public final class R {
 	}
 	public static final class layout {
 		public static final int month = 0x7f040028;
-		public static final int week = 0x7f040036;
+		public static final int week = 0x7f040037;
 	}
 	public static final class string {
 		public static final int day_name_format = 0x7f06001a;
