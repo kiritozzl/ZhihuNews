@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,11 +23,14 @@ import app.coolwhether.com.zhihudailynews.entity.News;
 /**
  * Created by kirito on 2016/9/6.
  */
-public class FavoriteActivity extends AppCompatActivity implements AdapterView.OnItemClickListener,SwipeRefreshLayout.OnRefreshListener{
+public class FavoriteActivity extends AppCompatActivity implements AdapterView.OnItemClickListener,
+        AdapterView.OnItemLongClickListener,
+        SwipeRefreshLayout.OnRefreshListener{
     private ListView lv;
     private SwipeRefreshLayout srl;
     private List<News> favotiteList;
     private NewsAdapter adapter;
+    private static final String TAG = "FavoriteActivity";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,6 +44,7 @@ public class FavoriteActivity extends AppCompatActivity implements AdapterView.O
 
         loadData();
         lv.setOnItemClickListener(this);
+        lv.setOnItemLongClickListener(this);
     }
 
     private void loadData(){
@@ -88,4 +93,23 @@ public class FavoriteActivity extends AppCompatActivity implements AdapterView.O
         return true;
     }
 
+    @Override
+    public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
+        Log.e(TAG, "onItemLongClick: ---");
+        new AlertDialog.Builder(this).setTitle("是否删除这条收藏消息？").setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                News news = adapter.getItem(position);
+                DbFavNews.getInstance(getApplicationContext()).deleteFavorite(news);
+                loadData();
+            }
+        }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        }).show();
+
+        return true;
+    }
 }
