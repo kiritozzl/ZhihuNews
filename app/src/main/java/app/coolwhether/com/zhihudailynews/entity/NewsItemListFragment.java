@@ -11,6 +11,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.tencent.open.utils.Util;
+
+import java.util.Calendar;
+
 import app.coolwhether.com.zhihudailynews.R;
 import app.coolwhether.com.zhihudailynews.activity.NewsDetailActivity;
 import app.coolwhether.com.zhihudailynews.adapter.NewsAdapter;
@@ -50,7 +54,9 @@ public class NewsItemListFragment extends Fragment implements SwipeRefreshLayout
     public static NewsItemListFragment newInstance(long id,boolean isToday){
         NewsItemListFragment fragment = new NewsItemListFragment();
         Bundle bundle = new Bundle();
-        bundle.putLong("id",id+1);
+
+        Calendar calendar = Utility.resetDate(Long.toString(id));
+        bundle.putLong("id",Utility.dayPlus(calendar));
         bundle.putBoolean("isToday",isToday);
         fragment.setArguments(bundle);
 

@@ -49,6 +49,7 @@ public class LoadNewsTask extends AsyncTask<Long, Void, List<News>> {
 
     @Override
     protected void onPostExecute(List<News> newsList) {
+        if (newsList != null)
         adapter.refreshNewsList(newsList);
         if (listener != null) {
             listener.afterTaskFinish();

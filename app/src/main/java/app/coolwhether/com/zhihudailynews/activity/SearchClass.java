@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 
 import app.coolwhether.com.zhihudailynews.R;
 import app.coolwhether.com.zhihudailynews.support.Constants;
+import app.coolwhether.com.zhihudailynews.support.Utility;
 
 /**
  * Created by kirito on 2017.12.31.
@@ -51,25 +52,14 @@ public class SearchClass extends AppCompatActivity {
                 }else if (Long.valueOf(date) < 20131119){//知乎日报的生日为 2013 年 5 月 19 日，若 before 后数字小于 20130520 ，只会接收到空消息
                     Toast.makeText(SearchClass.this, "日期不能小于20131119", Toast.LENGTH_LONG).show();
                 }else if (!date.isEmpty()){
-                    year = date.substring(0,4);
-                    month = date.substring(4,6);
-                    day = date.substring(6,date.length());
-
-                    Calendar calendar = Calendar.getInstance();
-                    //根据输入日期重置当前calender日期
-                    calendar.set(Integer.valueOf(year),Integer.valueOf(month)-1,Integer.valueOf(day));
+                    Calendar calendar = Utility.resetDate(date);
                     Date date = calendar.getTime();
                     //times为设置消息列表的title做准备
                     SimpleDateFormat sdf1 = new SimpleDateFormat(getString(R.string.date_formate));
                     String times = sdf1.format(date);
 
-                    calendar.add(Calendar.DAY_OF_YEAR, 1);//为了使id比日期+1
-                    String time = Constants.Dates.simpleDateFormat.format(calendar.getTime());
-                    //t为所选取的日期，当天知乎日报新闻的id
-                    long t = Long.parseLong(time);
-
                     Intent intent = new Intent(SearchClass.this,SingleNewsLists.class);
-                    intent.putExtra("id",t);
+                    intent.putExtra("id",Utility.dayPlus(calendar));
                     intent.putExtra("time",times);
                     startActivity(intent);
                 }
