@@ -4,4 +4,7 @@
     <string name="date_formate">yyyy,MMM,dd,EEE</string>
     <string name="trash">清空收藏列表</string>
     <string name="search_hint">输入日报日期，如：20170101</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
 </resources>

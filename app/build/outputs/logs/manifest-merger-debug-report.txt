@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.support:design:23.1.1] C:\Users\kirito\.gradle\caches\transforms-1\files-1.1\design-23.1.1.aar\cefc01dd91d80d0312446ed116cb5218\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\kirito\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.3.0.aar\9315c32a5f32c3d6d0f3accb63f31ed2\AndroidManifest.xml:17:1-27:12
 MERGED from [com.astuetz:pagerslidingtabstrip:1.0.1] C:\Users\kirito\.gradle\caches\transforms-1\files-1.1\pagerslidingtabstrip-1.0.1.aar\0730a4c1a0b5968f5ac72ef6e776176e\AndroidManifest.xml:1:1-5:12
@@ -12,25 +12,25 @@ MERGED from [com.android.support:recyclerview-v7:23.1.1] C:\Users\kirito\.gradle
 MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\kirito\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.3.0.aar\1061dea0a13f0340511e3971deb6a96a\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\kirito\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.3.0.aar\7b3c4c47522e132f0b6d3b6a211e1223\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:support-v4:23.3.0] C:\Users\kirito\.gradle\caches\transforms-1\files-1.1\support-v4-23.3.0.aar\41c668b64234c99dcdb4e9e25ad738ea\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:3:11-55
 		INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:5:5-44:19
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:5:5-46:19
 MERGED from [com.android.support:design:23.1.1] C:\Users\kirito\.gradle\caches\transforms-1\files-1.1\design-23.1.1.aar\cefc01dd91d80d0312446ed116cb5218\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.1] C:\Users\kirito\.gradle\caches\transforms-1\files-1.1\design-23.1.1.aar\cefc01dd91d80d0312446ed116cb5218\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\kirito\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.3.0.aar\9315c32a5f32c3d6d0f3accb63f31ed2\AndroidManifest.xml:25:5-20
@@ -68,73 +68,75 @@ ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:15
 	android:name
 		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:15:27-74
 activity#app.coolwhether.com.zhihudailynews.activity.NewsDetailActivity
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:19:9-64
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:19:9-20:56
+	android:theme
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:20:13-54
 	android:name
 		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:19:19-62
 activity#app.coolwhether.com.zhihudailynews.activity.CalendarActivity
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:20:9-62
-	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:20:19-60
-activity#app.coolwhether.com.zhihudailynews.activity.SingleNewsLists
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:21:9-61
-	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:21:19-59
-activity#app.coolwhether.com.zhihudailynews.activity.FavoriteActivity
 ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:22:9-62
 	android:name
 		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:22:19-60
+activity#app.coolwhether.com.zhihudailynews.activity.SingleNewsLists
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:23:9-61
+	android:name
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:23:19-59
+activity#app.coolwhether.com.zhihudailynews.activity.FavoriteActivity
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:24:9-62
+	android:name
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:24:19-60
 activity#app.coolwhether.com.zhihudailynews.activity.SearchClass
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:23:9-57
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:25:9-57
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:23:19-55
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:25:19-55
 activity#com.tencent.tauth.AuthActivity
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:25:9-35:20
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:27:9-37:20
 	android:launchMode
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:28:13-44
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:30:13-44
 	android:noHistory
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:27:13-37
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:26:13-58
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:28:13-58
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:29:13-34:29
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:31:13-36:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:31:17-76
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:33:17-76
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:31:27-73
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:33:27-73
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:32:17-78
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:34:17-78
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:32:27-75
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:34:27-75
 data
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:33:17-60
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:35:17-60
 	android:scheme
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:33:23-57
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:35:23-57
 activity#com.tencent.connect.common.AssistActivity
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:37:9-42:20
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:39:9-44:20
 	android:screenOrientation
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:39:13-47
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:41:13-47
 	android:configChanges
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:41:13-63
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:43:13-63
 	android:theme
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:40:13-72
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:42:13-72
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:38:13-69
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:40:13-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:46:5-67
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:48:5-67
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:46:22-64
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:48:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:47:5-81
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:49:5-81
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:47:22-78
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:49:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:48:5-79
+ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:50:5-79
 	android:name
-		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:48:22-76
+		ADDED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml:50:22-76
 uses-sdk
 INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\kirito\Desktop\ZhihuNews\app\src\main\AndroidManifest.xml

@@ -44,4 +44,8 @@
         <item name="android:minHeight">?attr/actionBarSize</item>"
     </style>
 
+    <style name="DetailToolBarStyle" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>

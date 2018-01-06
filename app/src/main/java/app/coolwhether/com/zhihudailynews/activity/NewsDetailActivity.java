@@ -14,6 +14,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -56,6 +57,10 @@ public class NewsDetailActivity extends AppCompatActivity {
     private static final String mAppid = "1105642919";
 
     private float webHeight;
+
+    private Toolbar toolbar;
+    private float height;
+    private float curY;
     private static final String TAG = "NewsDetailActivity";
 
     @Override
@@ -64,6 +69,8 @@ public class NewsDetailActivity extends AppCompatActivity {
         setContentView(R.layout.news_detail);
 
         mWebView = (EnhanceWebView) findViewById(R.id.webview);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         setWebView(mWebView);
 
         news = (News) getIntent().getSerializableExtra("news");
@@ -74,25 +81,15 @@ public class NewsDetailActivity extends AppCompatActivity {
             public void onScroll(int dx, int dy) {
                 //Log.e(TAG, "onScroll: ---dy:"+dy );
                 if (dy >= 1){//页面往下走隐藏actionbar
-                    getSupportActionBar().hide();
+                    //getSupportActionBar().hide();
+                    //hideToolBar();
                 }else if (dy <= -1){//页面往上走，显示actionbar
-                    getSupportActionBar().show();
+                    //getSupportActionBar().show();
+                    //showToolBar();
                 }
 
             }
         });
-
- /*       mWebView.setListener(new ScrollWebView.OnScrollListener() {
-            @Override
-            public void onScrollUp() {
-                getSupportActionBar().show();
-            }
-
-            @Override
-            public void onScrollDown() {
-                getSupportActionBar().hide();
-            }
-        });*/
 
         if (mTencent == null){
             mTencent = Tencent.createInstance(mAppid,getApplicationContext());
@@ -263,5 +260,20 @@ public class NewsDetailActivity extends AppCompatActivity {
 
             startActivity(Intent.createChooser(share, "Select"));
         }
+    }
+
+    private void hideToolBar(){
+        curY = toolbar.getTranslationY();
+        height = toolbar.getHeight();
+        ObjectAnimator oa = ObjectAnimator.ofFloat(toolbar,"translationY",curY,-height);
+        oa.setDuration(1000);
+        oa.start();
+    }
+
+    private void showToolBar(){
+        curY = toolbar.getTranslationY();
+        ObjectAnimator oa = ObjectAnimator.ofFloat(toolbar,"translationY",curY,0f);
+        oa.setDuration(2000);
+        oa.start();
     }
 }

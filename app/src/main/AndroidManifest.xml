@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.NewsDetailActivity"/>
+        <activity android:name=".activity.NewsDetailActivity"
+            android:theme="@style/DetailToolBarStyle"/>
+
         <activity android:name=".activity.CalendarActivity"/>
         <activity android:name=".activity.SingleNewsLists"/>
         <activity android:name=".activity.FavoriteActivity"/>
